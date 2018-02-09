@@ -1,0 +1,68 @@
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#wrapper{
+			height: 100%;
+			position: relative;
+		}
+		
+		#map{
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			
+		}
+		li{
+			list-style: none;
+			margin: 10px;
+		}
+		input{
+			margin: 10px;
+		}
+		.searchList{
+			position: absolute;
+			top: 20px;
+			background-color: #ddd;
+			opacity: 0.8;
+		}
+		
+
+
+		@media screen and (max-width: 600px) {
+		    .searchList{
+
+		        	
+		        	transform: translate(-180px, 0);
+		        	transition: transform 0.3s ease;
+		        }
+		    button{
+				position: absolute;
+				top: 0;
+				left: 0;
+				
+			}
+			
+		        
+		    
+		}
+		.show{
+			transform: translate(0, 0);
+		}
+		@media screen and (min-width: 600px) {
+		    
+			button{
+				display: none;
+			}
+		}
+		
+		
